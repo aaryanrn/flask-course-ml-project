@@ -1,6 +1,6 @@
 pandas
 scikit-learn
 feature-engine
-flak
+flask
 flask-wtf
 gunicorn
