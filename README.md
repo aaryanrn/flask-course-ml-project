@@ -32,7 +32,7 @@ pip install -r requirements.txt
 
 2. Navigate to the project directory:
    ```bash
-   cd your-repo-name
+   cd flask-course-ml-project
    ```
 
 3. Activate your virtual environment (if you have one):
