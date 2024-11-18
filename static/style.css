@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensure padding and borders are included in element's total width and height */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Set a default font for the body */
+}
+
+.welcome_dec {
+    display: block;
+    margin: 5vh auto; /* Center the margin */
+    padding: 5vh;
+    background-color: aqua;
+    width: 90%; /* Responsive width */
+    max-width: 600px; /* Max width to prevent it from getting too wide */
+}
+
+.stater {
+    display: block;
+    border: 5px solid black;
+    min-height: 30vh;
+    width: 90%; /* Responsive width */
+    max-width: 400px; /* Max width to maintain design */
+    margin: 5vh auto; /* Centered margin */
+    padding: 25px; /* Use fixed padding to maintain the internal layout */
+    text-align: center;
+    line-height: 2rem;
+    background-color: rgb(181, 243, 46);
+}
+
+.form1 {
+    display: flex;
+    flex-direction: column; /* Stack form elements vertically */
+    margin: 1vh auto; /* Centered margin */
+    padding: 20px; /* Consistent padding */
+    border: 8px ridge rgba(35, 36, 25, 0.6);
+    background-color: rgb(199, 56, 56);
+    border-radius: 18px;
+    color: bisque;
+    text-align: center;
+    width: 90%; /* Responsive width */
+    max-width: 500px; /* Max width to prevent it from getting too wide */
+}
+
+.form1 input,
+.form1 button { /* Style for input fields and buttons */
+    width: 100%; /* Full width */
+    padding: 10px; /* Padding for input fields */
+    margin: 10px 0; /* Margin between elements */
+    border: 2px solid #fff; /* White border for inputs */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.form1 button {
+    background-color: #4CAF50; /* Green background for the button */
+    color: white; /* White text */
+    cursor: pointer; /* Pointer cursor for the button */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.form1 button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+.column {
+    text-align: center;
+    padding: 1vh; /* Increased padding for better spacing */
+    box-sizing: border-box;
+    width: 100%; /* Full width for better responsiveness */
+}
+
+.button{
+    border: #45a049;
+}
+div>p>a{
+    display: block;
+    margin-top: 12px;
+    padding: 12px;
+    border:2px solid #45a049;
+    background-color: aqua;
+    border-radius: 24px;
+    color: black;
+}
+
+.output{
+    color: rgba(15, 10, 10, 0.511);
+    font-weight:600;
+}
+
+/* Media queries for further responsiveness */
+@media (max-width: 768px) {
+    .welcome_dec,
+    .stater,
+    .form1 {
+        padding: 5vh; /* Reduce padding on smaller screens */
+    }
+
+    .form1 {
+        padding: 10px; /* Adjust padding specifically for form */
+    }
+}
+
+@media (max-width: 480px) {
+    .stater,
+    .form1 {
+        width: 95%; /* Make it slightly wider on small screens */
+    }
+}
