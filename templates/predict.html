@@ -1,8 +1,9 @@
 {% extends "layout.html" %}
 {% block content %}
 <form action="" method="post">
+    <div class="form1">
     {{ form.hidden_tag() }}
-    <div>
+    <div class="coloumn">
         {{ form.airline.label }}
         {{ form.airline }}
         {% if form.airline.errors %}
@@ -12,7 +13,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.date_of_journey.label }}
         {{ form.date_of_journey }}
         {% if form.date_of_journey.errors %}
@@ -22,7 +23,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.source.label }}
         {{ form.source }}
         {% if form.source.errors %}
@@ -32,7 +33,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.destination.label }}
         {{ form.destination }}
         {% if form.destination.errors %}
@@ -42,7 +43,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.dep_time.label }}
         {{ form.dep_time }}
         {% if form.dep_time.errors %}
@@ -52,7 +53,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.arrival_time.label }}
         {{ form.arrival_time }}
         {% if form.arrival_time.errors %}
@@ -62,7 +63,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.duration.label }}
         {{ form.duration }}
         {% if form.duration.errors %}
@@ -72,7 +73,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.total_stops.label }}
         {{ form.total_stops }}
         {% if form.total_stops.errors %}
@@ -82,7 +83,7 @@
         {% endif %}
     </div>
     <br>
-    <div>
+    <div class="coloumn">
         {{ form.additional_info.label }}
         {{ form.additional_info }}
         {% if form.additional_info.errors %}
@@ -92,14 +93,15 @@
         {% endif %}
     </div>
     <br>
-    <div>{{ form.submit() }}</div>
+    <div class="coloumn">{{ form.submit() }}</div>
     <br>
-    <div>
+    <div class="coloumn output">
         {{ output }}
     </div>
     <br>
-    <div>
+    <div class="coloumn button">
         <p>Redirect to Homepage? <a href="{{ url_for('home') }}">Home</a></p>
+    </div>
     </div>
 </form>
 {% endblock content %}
